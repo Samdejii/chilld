@@ -102,7 +102,7 @@ const RecentBlog = () => {
 
         useEffect(() => {
             setIsEnd(sliderRef.current?.swiper.isEnd);
-            setIsBeginning(sliderRef.current?.swiper.isBeginning);[]
+            setIsBeginning(sliderRef.current?.swiper.isBeginning);
         })
 
 
@@ -176,7 +176,7 @@ const RecentBlog = () => {
             onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex)}
             className="z-50 py-32 mb-24 relative flex items-stretch !overflow-visible before:content-[''] before:z-50 before:py-32 before:right-full before:w-screen before:absolute before:-top-5 before:-bottom-5 before:bg-light">
                 {blogContent.recentBlog.map((blog, idx) => (
-                    <SwiperSlide className="overflow-visible h-full">
+                    <SwiperSlide className="overflow-visible h-full" key={blogContent} blogContent={blogContent}>
 
                         <div className='p-5 rounded-lg bg-white relative mt-10'>
                             <Link href={blog.permalink} className='relative -mt-10 inline-block overflow-hidden rounded-lg mb-4'>

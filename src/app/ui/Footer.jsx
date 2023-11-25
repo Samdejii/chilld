@@ -124,13 +124,13 @@ const Footer = () => {
                 <div className='w-full lg:w-4/12 mb-10 lg:mb-0'>
                     <div className='grid grid-cols-2 gap-10'>
                         {footContent.footerLinks.map((footerLink, idx) => (
-                            <div>
+                            <div key={footContent} blogContent={footContent}>
                                 <h3 className='font-semibold text-heading mb-5'>
                                     {footerLink.heading}
                                 </h3>
                                 <ul>
                                     {footerLink.links.map((link, idx) => (
-                                        <li className='mb-3'>
+                                        <li className='mb-3' key={footerLink} blogContent={footerLink}>
                                             <Link href={link.href}
                                             className='group-flex items-center duration-300 transition-all ease-in-out hover:text-primary'>
                                                 <span>{link.label}</span>

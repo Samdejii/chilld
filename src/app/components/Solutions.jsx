@@ -90,7 +90,7 @@ const Solutions = () => {
                                 </div>
 
                                 <div>
-                                    <Image src={solutionContent.images.img2} width={547} height={573} className='object-cover h-full w-full rounded-lg shadow-2x'  data-aos="fade-in" dat-aos-delay="300"/>
+                                    <Image src={solutionContent.images.img2} width={547} height={573} alt='happy' className='object-cover h-full w-full rounded-lg shadow-2x'  data-aos="fade-in" dat-aos-delay="300"/>
                                 </div>
 
                             {solutionContent.experience.label && (

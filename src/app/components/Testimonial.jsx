@@ -97,11 +97,11 @@ const Testimonial = () => {
                             if ( idx == 2 ) return null;
                             return (
                             <div className={`bg-white p-7 rounded-lg w-full
-                            ${ idx == 1 ? "" : "mb-6"}`}>
+                            ${ idx == 1 ? "" : "mb-6"}`}  key={testimonialContent} blogContent={testimonialContent}>
                                 <div className='flex space-x-4 items-center'>
 
                                     <div className='relative'>
-                                        <Image src={testimonial.img} width={579} height={720}
+                                        <Image src={testimonial.img} width={579} height={720} alt='okay'
                                         className='object-cover h-14 w-14 rounded-full' data-aos="fade-in" dat-aos-delay="300" />
                                         <span className='absolute bottom-0 -right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center'>
                                             <Image src="/images/quote.svg" width={14} height={9} alt='how' data-aos="fade-in" dat-aos-delay="300" />
