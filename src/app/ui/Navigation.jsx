@@ -34,10 +34,14 @@ const navigationMenu = [
 const Navigation = () => {
 
     const [navOpen, setNavOpen] = useState(false);
-    const [dimensions, setDimensions] = useState({
+
+    if (typeof window !== "undefined") {
+        const [dimensions, setDimensions] = useState({
         height: window.innerHeight,
         width: window.innerWidth,
     });
+    }
+    
 
     const mobileMenuHandler = () => {
         setNavOpen(!navOpen);
