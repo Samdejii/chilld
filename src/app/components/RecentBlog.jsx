@@ -102,7 +102,7 @@ const RecentBlog = () => {
 
         useEffect(() => {
             setIsEnd(sliderRef.current?.swiper.isEnd);
-            setIsBeginning(sliderRef.current?.swiper.isBeginning);
+            setIsBeginning(sliderRef.current?.swiper.isBeginning);[]
         })
 
 
